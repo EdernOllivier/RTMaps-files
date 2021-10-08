@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.6.0" EngineVersion="4.6" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="1.21.3"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_3d.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_3d.pck]]></Relative></File>
+    <File Version="1.0"><![CDATA[C:/Users/edern/OneDrive/Bureau/RTMaps-4.0/rtmaps_matVec.pck]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rtmaps_matVec.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="data_vectorizer_1" Model="data_vectorizer" Version="1.1.3" x="264" y="160" z="0">
+    <Input LongName="data_vectorizer_1.i_data_1" Name="i_data_1">
+      <Property LongName="data_vectorizer_1.i_data_1.readerType" Type="1">0</Property>
+      <Property LongName="data_vectorizer_1.i_data_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="data_vectorizer_1.i_data_2" Name="i_data_2">
+      <Property LongName="data_vectorizer_1.i_data_2.readerType" Type="1">0</Property>
+      <Property LongName="data_vectorizer_1.i_data_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="data_vectorizer_1.i_data_3" Name="i_data_3">
+      <Property LongName="data_vectorizer_1.i_data_3.readerType" Type="1">0</Property>
+      <Property LongName="data_vectorizer_1.i_data_3.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="data_vectorizer_1.o_data" Name="o_data">
+      <Property LongName="data_vectorizer_1.o_data.subsampling" Type="1">1</Property>
+      <Property LongName="data_vectorizer_1.o_data.fifosize" Type="1">16</Property>
+      <Property LongName="data_vectorizer_1.o_data.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="data_vectorizer_1.p_output_type" Type="4"><![CDATA[11|0|Auto|Float32|Float64|Integer8|Integer16|Integer32|Integer64|UnsignedInteger8|UnsignedInteger16|UnsignedInteger32|UnsignedInteger64]]></Property>
+    <Property LongName="data_vectorizer_1.p_reading_policy" Type="4"><![CDATA[6|4|Synchronized|Periodic Sampling|Reactive|Triggered|Wait For All Inputs|Periodic Sampling While Post-Processing]]></Property>
+    <Property LongName="data_vectorizer_1.p_nb_inputs" Type="1">3</Property>
+    <Property LongName="data_vectorizer_1.threaded" Type="0">true</Property>
+    <Property LongName="data_vectorizer_1.priority" Type="1">128</Property>
+    <Property LongName="data_vectorizer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="1.34.3" x="832" y="320" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3"><![CDATA[214;342]]></Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[DataViewer_1]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">208</Property>
+    <Property LongName="DataViewer_1.y" Type="1">176</Property>
+    <Property LongName="DataViewer_1.width" Type="1">566</Property>
+    <Property LongName="DataViewer_1.height" Type="1">761</Property>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Float_constants_generator_1" Model="Float_constants_generator" Version="2.2" x="16" y="72" z="0">
+    <Output LongName="Float_constants_generator_1.output" Name="output">
+      <Property LongName="Float_constants_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Float_constants_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Float_constants_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Float_constants_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Float_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1.vectorSize" Type="1">8</Property>
+    <Property LongName="Float_constants_generator_1.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Float_constants_generator_1.value_1" Type="2">1</Property>
+    <Property LongName="Float_constants_generator_1.value_2" Type="2">2</Property>
+    <Property LongName="Float_constants_generator_1.value_3" Type="2">3</Property>
+    <Property LongName="Float_constants_generator_1.value_4" Type="2">4</Property>
+    <Property LongName="Float_constants_generator_1.value_5" Type="2">5</Property>
+    <Property LongName="Float_constants_generator_1.value_6" Type="2">6</Property>
+    <Property LongName="Float_constants_generator_1.value_7" Type="2">7</Property>
+    <Property LongName="Float_constants_generator_1.value_8" Type="2">8</Property>
+    <Property LongName="Float_constants_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Float_constants_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Float_constants_generator_1_1" Model="Float_constants_generator" Version="2.2" x="16" y="176" z="0">
+    <Output LongName="Float_constants_generator_1_1.output" Name="output">
+      <Property LongName="Float_constants_generator_1_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Float_constants_generator_1_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Float_constants_generator_1_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Float_constants_generator_1_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Float_constants_generator_1_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1_1.vectorSize" Type="1">8</Property>
+    <Property LongName="Float_constants_generator_1_1.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Float_constants_generator_1_1.value_1" Type="2">1</Property>
+    <Property LongName="Float_constants_generator_1_1.value_2" Type="2">2</Property>
+    <Property LongName="Float_constants_generator_1_1.value_3" Type="2">3</Property>
+    <Property LongName="Float_constants_generator_1_1.value_4" Type="2">4</Property>
+    <Property LongName="Float_constants_generator_1_1.value_5" Type="2">5</Property>
+    <Property LongName="Float_constants_generator_1_1.value_6" Type="2">6</Property>
+    <Property LongName="Float_constants_generator_1_1.value_7" Type="2">7</Property>
+    <Property LongName="Float_constants_generator_1_1.value_8" Type="2">8</Property>
+    <Property LongName="Float_constants_generator_1_1.threaded" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1_1.priority" Type="1">128</Property>
+    <Property LongName="Float_constants_generator_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Float_constants_generator_1_2" Model="Float_constants_generator" Version="2.2" x="16" y="280" z="0">
+    <Output LongName="Float_constants_generator_1_2.output" Name="output">
+      <Property LongName="Float_constants_generator_1_2.output.subsampling" Type="1">1</Property>
+      <Property LongName="Float_constants_generator_1_2.output.fifosize" Type="1">16</Property>
+      <Property LongName="Float_constants_generator_1_2.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Float_constants_generator_1_2.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Float_constants_generator_1_2.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1_2.vectorSize" Type="1">8</Property>
+    <Property LongName="Float_constants_generator_1_2.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Float_constants_generator_1_2.value_1" Type="2">1</Property>
+    <Property LongName="Float_constants_generator_1_2.value_2" Type="2">2</Property>
+    <Property LongName="Float_constants_generator_1_2.value_3" Type="2">3</Property>
+    <Property LongName="Float_constants_generator_1_2.value_4" Type="2">4</Property>
+    <Property LongName="Float_constants_generator_1_2.value_5" Type="2">5</Property>
+    <Property LongName="Float_constants_generator_1_2.value_6" Type="2">6</Property>
+    <Property LongName="Float_constants_generator_1_2.value_7" Type="2">7</Property>
+    <Property LongName="Float_constants_generator_1_2.value_8" Type="2">8</Property>
+    <Property LongName="Float_constants_generator_1_2.threaded" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1_2.priority" Type="1">128</Property>
+    <Property LongName="Float_constants_generator_1_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="matrix_multiplier_1" Model="matrix_multiplier" Version="1.1.0" x="648" y="320" z="0">
+    <Input LongName="matrix_multiplier_1.input_0" Name="input_0">
+      <Property LongName="matrix_multiplier_1.input_0.readerType" Type="1">0</Property>
+      <Property LongName="matrix_multiplier_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="matrix_multiplier_1.input_1" Name="input_1">
+      <Property LongName="matrix_multiplier_1.input_1.readerType" Type="1">0</Property>
+      <Property LongName="matrix_multiplier_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="matrix_multiplier_1.output_0" Name="output_0">
+      <Property LongName="matrix_multiplier_1.output_0.subsampling" Type="1">1</Property>
+      <Property LongName="matrix_multiplier_1.output_0.fifosize" Type="1">16</Property>
+      <Property LongName="matrix_multiplier_1.output_0.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="matrix_multiplier_1.output_1" Name="output_1">
+      <Property LongName="matrix_multiplier_1.output_1.subsampling" Type="1">1</Property>
+      <Property LongName="matrix_multiplier_1.output_1.fifosize" Type="1">16</Property>
+      <Property LongName="matrix_multiplier_1.output_1.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="matrix_multiplier_1.nbSources" Type="1">2</Property>
+    <Property LongName="matrix_multiplier_1.order" Type="4"><![CDATA[2|0|Prefix|Postfix]]></Property>
+    <Property LongName="matrix_multiplier_1.nbRows" Type="1">4</Property>
+    <Property LongName="matrix_multiplier_1.nbColumns" Type="1">6</Property>
+    <Property LongName="matrix_multiplier_1.matrix" Type="3"><![CDATA[1]]></Property>
+    <Property LongName="matrix_multiplier_1.threaded" Type="0">true</Property>
+    <Property LongName="matrix_multiplier_1.priority" Type="1">128</Property>
+    <Property LongName="matrix_multiplier_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="State_vector" Model="Float_constants_generator" Version="2.2" x="64" y="432" z="0">
+    <Output LongName="State_vector.output" Name="output">
+      <Property LongName="State_vector.output.subsampling" Type="1">1</Property>
+      <Property LongName="State_vector.output.fifosize" Type="1">16</Property>
+      <Property LongName="State_vector.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="State_vector.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="State_vector.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="State_vector.vectorSize" Type="1">8</Property>
+    <Property LongName="State_vector.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="State_vector.value_1" Type="2">1</Property>
+    <Property LongName="State_vector.value_2" Type="2">2</Property>
+    <Property LongName="State_vector.value_3" Type="2">3</Property>
+    <Property LongName="State_vector.value_4" Type="2">4</Property>
+    <Property LongName="State_vector.value_5" Type="2">5</Property>
+    <Property LongName="State_vector.value_6" Type="2">6</Property>
+    <Property LongName="State_vector.value_7" Type="2">7</Property>
+    <Property LongName="State_vector.value_8" Type="2">8</Property>
+    <Property LongName="State_vector.threaded" Type="0">true</Property>
+    <Property LongName="State_vector.priority" Type="1">128</Property>
+    <Property LongName="State_vector.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="vec2mat_1" Model="vec2mat" Version="1.0" x="456" y="160" z="0">
+    <Input LongName="vec2mat_1.vector" Name="vector">
+      <Property LongName="vec2mat_1.vector.readerType" Type="1">0</Property>
+      <Property LongName="vec2mat_1.vector.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="vec2mat_1.matrix" Name="matrix">
+      <Property LongName="vec2mat_1.matrix.subsampling" Type="1">1</Property>
+      <Property LongName="vec2mat_1.matrix.fifosize" Type="1">16</Property>
+      <Property LongName="vec2mat_1.matrix.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="vec2mat_1.cols" Type="1">4</Property>
+    <Property LongName="vec2mat_1.rows" Type="1">6</Property>
+    <Property LongName="vec2mat_1.offset" Type="1">0</Property>
+    <Property LongName="vec2mat_1.padding" Type="1">0</Property>
+    <Property LongName="vec2mat_1.threaded" Type="0">true</Property>
+    <Property LongName="vec2mat_1.priority" Type="1">128</Property>
+    <Property LongName="vec2mat_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="vec2mat_1_1" Model="vec2mat" Version="1.0" x="264" y="432" z="0">
+    <Input LongName="vec2mat_1_1.vector" Name="vector">
+      <Property LongName="vec2mat_1_1.vector.readerType" Type="1">0</Property>
+      <Property LongName="vec2mat_1_1.vector.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="vec2mat_1_1.matrix" Name="matrix">
+      <Property LongName="vec2mat_1_1.matrix.subsampling" Type="1">1</Property>
+      <Property LongName="vec2mat_1_1.matrix.fifosize" Type="1">16</Property>
+      <Property LongName="vec2mat_1_1.matrix.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="vec2mat_1_1.cols" Type="1">4</Property>
+    <Property LongName="vec2mat_1_1.rows" Type="1">6</Property>
+    <Property LongName="vec2mat_1_1.offset" Type="1">0</Property>
+    <Property LongName="vec2mat_1_1.padding" Type="1">0</Property>
+    <Property LongName="vec2mat_1_1.threaded" Type="0">true</Property>
+    <Property LongName="vec2mat_1_1.priority" Type="1">128</Property>
+    <Property LongName="vec2mat_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Float_constants_generator_1.output" Input="data_vectorizer_1.i_data_1"/>
+  <Connection Output="Float_constants_generator_1_1.output" Input="data_vectorizer_1.i_data_2"/>
+  <Connection Output="Float_constants_generator_1_2.output" Input="data_vectorizer_1.i_data_3"/>
+  <Connection Output="matrix_multiplier_1.output_0" Input="DataViewer_1.input_0"/>
+  <Connection Output="matrix_multiplier_1.output_1" Input="DataViewer_1.input_1"/>
+  <Connection Output="vec2mat_1.matrix" Input="matrix_multiplier_1.input_0"/>
+  <Connection Output="vec2mat_1_1.matrix" Input="matrix_multiplier_1.input_1"/>
+  <Connection Output="data_vectorizer_1.o_data" Input="vec2mat_1.vector"/>
+  <Connection Output="State_vector.output" Input="vec2mat_1_1.vector"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="Float_constants_generator_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Float_constants_generator_1_2" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Float_constants_generator_1_2_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="vec2mat_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <CommentBox x="740" y="55" z="-1" w="542" h="136" align="0" bgcolor="d2d2d2" fgcolor="0">1 - On vectorise 3 Float Generators pour obtenir un vecteur continu que l'on donne à vec2mat.&#13;
+&#13;
+2 - On crée le vecter d'état que l'on converti en matrice également.&#13;
+&#13;
+Et on peut manipuler les 2 en tant que matrices</CommentBox>
+    <CommentBox x="7" y="437" z="-1" w="50" h="50" align="0" bgcolor="d2d2d2" fgcolor="0">2</CommentBox>
+    <CommentBox x="18" y="7" z="-1" w="50" h="50" align="0" bgcolor="d2d2d2" fgcolor="0">1</CommentBox>
+    <ConnectionShape InstanceName="data_vectorizer_1.i_data_1" color="0"/>
+    <ConnectionShape InstanceName="data_vectorizer_1.i_data_2" color="0"/>
+    <ConnectionShape InstanceName="data_vectorizer_1.i_data_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="matrix_multiplier_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="matrix_multiplier_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="vec2mat_1.vector" color="0"/>
+    <ConnectionShape InstanceName="vec2mat_1_1.vector" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

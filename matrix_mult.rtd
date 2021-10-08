@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.6.0" EngineVersion="4.6" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="3.0.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="1.36.2" x="768" y="-80" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_2" Name="input_2">
+      <Property LongName="DataViewer_1.input_2.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_1.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">3</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[286;1133]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|PythonBridge_1.out;1|Info:PythonBridge_1.out;0|Type:Info:PythonBridge_1.out;1|Data:PythonBridge_1.out;1|Matrix_constant_generator_1.output;1|Info:Matrix_constant_generator_1.output;0|Type:Info:Matrix_constant_generator_1.output;1|Data:Matrix_constant_generator_1.output]]></Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[DataViewer_1]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">0</Property>
+    <Property LongName="DataViewer_1.y" Type="1">0</Property>
+    <Property LongName="DataViewer_1.width" Type="1">1429</Property>
+    <Property LongName="DataViewer_1.height" Type="1">1193</Property>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Matrix_constant_generator_1" Model="Matrix_constant_generator" Version="1.2" x="104" y="-160" z="0">
+    <Output LongName="Matrix_constant_generator_1.output" Name="output">
+      <Property LongName="Matrix_constant_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Matrix_constant_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Matrix_constant_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Matrix_constant_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Matrix_constant_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Matrix_constant_generator_1.matrixType" Type="4"><![CDATA[2|0|Real|Complex]]></Property>
+    <Property LongName="Matrix_constant_generator_1.nbRows" Type="1">4</Property>
+    <Property LongName="Matrix_constant_generator_1.nbColumns" Type="1">3</Property>
+    <Property LongName="Matrix_constant_generator_1.outputPeriod" Type="1" SubType="1">1000000</Property>
+    <Property LongName="Matrix_constant_generator_1.realMatrix" Type="3"><![CDATA[1	2	3
+4	5	6
+7	8	9
+10	11	12
+]]></Property>
+    <Property LongName="Matrix_constant_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Matrix_constant_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Matrix_constant_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Matrix_constant_generator_2" Model="Matrix_constant_generator" Version="1.2" x="88" y="80" z="0">
+    <Output LongName="Matrix_constant_generator_2.output" Name="output">
+      <Property LongName="Matrix_constant_generator_2.output.subsampling" Type="1">1</Property>
+      <Property LongName="Matrix_constant_generator_2.output.fifosize" Type="1">16</Property>
+      <Property LongName="Matrix_constant_generator_2.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Matrix_constant_generator_2.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Matrix_constant_generator_2.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Matrix_constant_generator_2.matrixType" Type="4"><![CDATA[2|0|Real|Complex]]></Property>
+    <Property LongName="Matrix_constant_generator_2.nbRows" Type="1">3</Property>
+    <Property LongName="Matrix_constant_generator_2.nbColumns" Type="1">4</Property>
+    <Property LongName="Matrix_constant_generator_2.outputPeriod" Type="1" SubType="1">1000000</Property>
+    <Property LongName="Matrix_constant_generator_2.realMatrix" Type="3"><![CDATA[1	2	3	4
+5	1	2	3
+4	5	1	2
+]]></Property>
+    <Property LongName="Matrix_constant_generator_2.threaded" Type="0">true</Property>
+    <Property LongName="Matrix_constant_generator_2.priority" Type="1">128</Property>
+    <Property LongName="Matrix_constant_generator_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PythonBridge_1" Model="PythonBridge" Version="3.0.1" x="472" y="0" z="0">
+    <Input LongName="PythonBridge_1.in1" Name="in1">
+      <Property LongName="PythonBridge_1.in1.readerType" Type="1">0</Property>
+      <Property LongName="PythonBridge_1.in1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="PythonBridge_1.in2" Name="in2">
+      <Property LongName="PythonBridge_1.in2.readerType" Type="1">4</Property>
+      <Property LongName="PythonBridge_1.in2.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="PythonBridge_1.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PythonBridge_1.internalInputs" Type="3" SubType="128"><![CDATA[in1;22==#in2;22==]]></Property>
+    <Property LongName="PythonBridge_1.internalOutputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="PythonBridge_1.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PythonBridge_1.logDebug" Type="0">false</Property>
+    <Property LongName="PythonBridge_1.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.pythonPID" Type="1">29724</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python37_64/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../Program Files (x86)/Microsoft Visual Studio/Shared/Python37_64]]></Relative></Property>
+    <Property LongName="PythonBridge_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/edern/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="PythonBridge_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PythonBridge_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/edern/OneDrive/Bureau/RTMaps-4.0/matrix_mult.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/matrix_mult.py]]></Relative></Property>
+    <Property LongName="PythonBridge_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.threaded" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.priority" Type="1">128</Property>
+    <Property LongName="PythonBridge_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Matrix_constant_generator_1.output" Input="DataViewer_1.input_0"/>
+  <Connection Output="Matrix_constant_generator_2.output" Input="DataViewer_1.input_1"/>
+  <Connection Output="Matrix_constant_generator_1.output" Input="PythonBridge_1.in1"/>
+  <Connection Output="Matrix_constant_generator_2.output" Input="PythonBridge_1.in2"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_2" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.in1" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.in2" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
